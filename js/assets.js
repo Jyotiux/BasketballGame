@@ -47,8 +47,8 @@ assets.base.img.onerror = () => {
 };
 
 // Image paths
-assets.ball.img.src = "/img/ball.png";
-assets.basket.img.src = "/img/basket.png";
-assets.base.img.src = "/img/base.avif";
+assets.ball.img.src = "img/ball.png";
+assets.basket.img.src = "img/basket.png";
+assets.base.img.src = "img/base.avif";
 
 console.log(window.assets);
