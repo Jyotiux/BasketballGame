@@ -141,9 +141,15 @@ base = {
    LAYOUT / RESPONSIVE LOGIC
 ========================= */
 
+function isMobile() {
+  return window.innerWidth <= 600;
+}
+
 function resizeGameArea() {
   const screenW = window.innerWidth;
-  const screenH = window.innerHeight;
+  const screenH = isMobile()
+    ? document.documentElement.clientHeight // excludes browser UI
+    : window.innerHeight;  
 
   let scale;
 
