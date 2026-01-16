@@ -148,7 +148,7 @@ function isMobile() {
 function resizeGameArea() {
   const screenW = window.innerWidth;
   const screenH = isMobile()
-    ? document.documentElement.clientHeight // excludes browser UI
+    ? window.visualViewport.height // excludes browser UI
     : window.innerHeight;  
 
   let scale;
