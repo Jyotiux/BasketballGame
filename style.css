@@ -2,13 +2,6 @@
   box-sizing: border-box;
 }
 
-/* prevent mobile scroll only */
-@media (max-width: 600px) {
-  body {
-    overflow: hidden;
-  }
-}
-
 body {
   margin: 0;
   height: 100vh;
